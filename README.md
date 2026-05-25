@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Resume Screening & ATS Analytics System
 
 ## 📌 Project Overview
@@ -46,3 +47,6 @@ resume-screening-project/
 ├── images/
 │   ├── dashboard1.png
 │   ├── dashboard2.png
+=======
+# ai-resume-screening-system
+>>>>>>> db0dce12f6ce7473e3b6eb4e00079ca7f5713688
