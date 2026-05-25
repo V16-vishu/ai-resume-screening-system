@@ -7,11 +7,52 @@ import os
 from PIL import Image
 
 # ---------------- PAGE CONFIG ----------------
-st.set_page_config(
-    page_title="AI Resume Screening System",
-    page_icon="📄",
-    layout="wide"
-)
+st.markdown("""
+<div class="hero">
+    <h1>📄 AI Resume Screening & ATS Analytics System</h1>
+    <p>Smart Resume Parser • ATS Score • Skill Extraction • ML Job Prediction • Power BI Dashboard</p>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    padding: 35px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border: 1px solid #38bdf8;
+    animation: fadeInUp 1s ease;
+    margin-bottom: 30px;
+}
+
+.feature-card {
+    background: #1e293b;
+    padding: 22px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    text-align: center;
+    animation: fadeInUp 1.2s ease;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #38bdf8;
+    box-shadow: 0 0 18px #38bdf8;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # ---------------- CUSTOM CSS ----------------
 st.markdown("""
@@ -63,6 +104,7 @@ st.markdown("""
     <p>Smart Resume Parser • ATS Score • Skill Extraction • ML Job Prediction • Power BI Dashboard</p>
 </div>
 """, unsafe_allow_html=True)
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
