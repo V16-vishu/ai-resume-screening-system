@@ -7,12 +7,11 @@ import os
 from PIL import Image
 
 # ---------------- PAGE CONFIG ----------------
-st.markdown("""
-<div class="hero">
-    <h1>📄 AI Resume Screening & ATS Analytics System</h1>
-    <p>Smart Resume Parser • ATS Score • Skill Extraction • ML Job Prediction • Power BI Dashboard</p>
-</div>
-""", unsafe_allow_html=True)
+st.set_page_config(
+    page_title="AI Resume Screening System",
+    page_icon="📄",
+    layout="wide"
+)
 
 st.markdown("""
 <style>
